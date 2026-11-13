@@ -57,7 +57,7 @@ console.log(negatief);
 // Oefening 4
 console.log("------ Oefening 4 --------");
 
-const prijsLaptop = 1200;
+let prijsLaptop = 1200;
 let spaargeld = 250
 let maanden = 0
 
@@ -71,10 +71,45 @@ console.log(`Je hebt ${maanden} maanden nodig voor je de laptop kan kopen.`);
 // Oefening 5
 console.log("------ Oefening 5 --------");
 
-let pogingen = 0
+let dobbelsteenPogingen = 0
 let dobbelsteenAantal = 0
 
-do while (dobbelsteenAantal =! 6) {
-    pogingen++
-    dobbelsteenAantal = Math.floor(Math.random() * 6) + 1
+do{
+    dobbelsteenPogingen++
+    dobbelsteenAantal = Math.floor(Math.random() * 6) + 1;
+    console.log(dobbelsteenAantal);
+
+} while(dobbelsteenAantal != 6);
+
+console.log(`Aantal pogingen: ${dobbelsteenPogingen} om ${dobbelsteenAantal} te gooien`);
+
+// Oefening 6
+console.log("------ Oefening 6 --------");
+
+let ingevoerdePincodes = ["1111", "2222", "3333", "4567"];
+let pincodePogingen = 0;
+const juistePincode = "4567"
+
+while (pincodePogingen < 3) {
+    if(ingevoerdePincodes[pincodePogingen] === juistePincode){
+        console.log("Toegang Verleend");
+        break
+    } else if (pincodePogingen == 2) {
+        console.log("Kaart geblokkeerd!");
+        break
+    }
+    pincodePogingen++
 }
+
+
+// Oefening 7
+console.log("------ Oefening 7 --------");
+
+let gebruikersInvoer = [15, 20, 5, 100, 50]
+let totaal = 0
+let b = 0
+
+do{
+    totaal += gebruikersInvoer[b]
+    b++
+}while(gebruikersInvoer[b] =! 0)
