@@ -117,3 +117,10 @@ do{
 console.log(totaal);
 
 // Oefening 8
+console.log("------ Oefening 8 --------");
+
+let prijzenWinkelmandje =  [120, 45, 210, 15, 85]
+
+for(let i = 0; i < prijzenWinkelmandje.length; i++){
+    
+}
