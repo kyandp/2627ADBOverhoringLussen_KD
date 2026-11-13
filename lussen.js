@@ -105,11 +105,15 @@ while (pincodePogingen < 3) {
 // Oefening 7
 console.log("------ Oefening 7 --------");
 
-let gebruikersInvoer = [15, 20, 5, 100, 50]
+let gebruikersInvoer = [15, 20, 5, 0, 100, 50]
 let totaal = 0
 let b = 0
 
 do{
-    totaal += gebruikersInvoer[b]
+    totaal = totaal + gebruikersInvoer[b]
     b++
-}while(gebruikersInvoer[b] =! 0)
+}while(gebruikersInvoer[b] != 0)
+
+console.log(totaal);
+
+// Oefening 8
